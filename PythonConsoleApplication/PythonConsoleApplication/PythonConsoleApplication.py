@@ -1,11 +1,11 @@
 #!/usr/bin/python
 
-from FileHelper import FileHelper
+from Helper.FileHelper import FileHelper
 
 def Main():
         print("Hello world");
         numberOfLines = int(input("Please enter the number of lines to read:"));
-        fileHelper = FileHelper("C:\\Users\\jajac\\Desktop\\py\\Q.txt");
+        fileHelper = FileHelper("Input.txt");
         lines = fileHelper.ReadFile();
 
         for x in lines:

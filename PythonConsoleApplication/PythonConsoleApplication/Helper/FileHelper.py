@@ -5,7 +5,7 @@ class FileHelper:
         self.file = filename;
 
     def ReadFile(self):
-        fileStream = open("C:\\Users\\jajac\\Desktop\\py\\Q.txt");
+        fileStream = open(self.file);
         lines = fileStream.readlines();
         fileStream.close();
         return lines;

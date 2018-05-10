@@ -21,16 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="FileHelper.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Helper\__init__.py">
+    <Compile Include="Helper\FileHelper.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PythonConsoleApplication.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Helper\" />
+    <Folder Include="C:\repo\Private-Repo\Python\PythonConsoleApplication\PythonConsoleApplication\Helper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Input.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
