@@ -1,9 +1,13 @@
 #!/usr/bin/python
+
+from FileHelper import FileHelper
+
 def Main():
         print("Hello world");
         numberOfLines = int(input("Please enter the number of lines to read:"));
-        file = open("C:\\Users\\jajac\\Desktop\\py\\Q.txt");
-        lines = file.readlines();
+        fileHelper = FileHelper("C:\\Users\\jajac\\Desktop\\py\\Q.txt");
+        lines = fileHelper.ReadFile();
+
         for x in lines:
             if numberOfLines != 0:
                 print(x);
@@ -11,9 +15,6 @@ def Main():
                 numberOfLines-= 1;
             else:    
                 break;
-            
-
-        file.close();
         
 if __name__ == "__man__":
     Main();
