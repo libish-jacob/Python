@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+# load class from a sub folder
 from Helper.FileHelper import FileHelper
 
 def Main():
